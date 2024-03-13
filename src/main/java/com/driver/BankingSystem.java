@@ -25,7 +25,8 @@ public class BankingSystem {
         double withdrawAmount = scanner.nextDouble();
         try {
             account.withdraw(withdrawAmount);
-            System.out.println("Withdrawal successful. Updated balance: " + account.getBalance());
+            System.out.println("Withdrawal successful. Updated balance: $" + account.getBalance());
+            //System.out.println("Withdrawal successful. Updated balance: " + );
         } catch (InsufficientBalanceException e) {
             System.out.println(e.getMessage());
         }
