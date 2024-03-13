@@ -34,7 +34,7 @@ public class BankAccount {
             return;
         }
         if (amount > balance) {
-            throw new InsufficientBalanceException("Insufficient balance.");
+            throw new InsufficientBalanceException("Insufficient balance. Cannot withdraw.");
         }
         balance -= amount;
     }
